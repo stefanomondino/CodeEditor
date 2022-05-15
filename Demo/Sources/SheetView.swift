@@ -38,6 +38,7 @@ struct SheetView<Content: View>: View {
             Divider()
             if let index = currentIndex {
                 contents(index)
+                    .id(index)
             } else {
                 Color(.clear)
             }
